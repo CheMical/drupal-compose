@@ -1,3 +1,7 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
 ## Installation Drupal
 docker-compose run drush drush -y si --db-url=mysql://root:example@mariadb:3306/test
 
