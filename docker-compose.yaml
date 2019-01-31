@@ -9,7 +9,7 @@ services:
       - /var/www/html/profiles
       - /var/www/html/themes
       - ./Drupal/modules/custom:/var/www/html/sites/all/modules/nota
-    ports:
+    #ports:
       #- 8080:80
     depends_on:
       - mariadb
