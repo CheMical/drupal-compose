@@ -3,4 +3,4 @@
 cd $(dirname $0)
 
 ## Execute script for running test as user www-data and append parameters
-docker-compose exec -u www-data drupal bash -c "php /var/www/html/scripts/run-tests.sh $*"
+docker-compose exec -T -u www-data drupal bash -c "php /var/www/html/scripts/run-tests.sh $*"
